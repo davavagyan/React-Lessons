@@ -1,0 +1,35 @@
+#root{
+  margin: auto 0;
+  justify-content: center;
+}
+.app-wrapper {
+  display:grid ;
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-areas: 
+    "head head"
+    "na con"
+  ;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap:10px; */
+}
+
+.header {
+  grid-area: head;
+  background-color: aqua;
+}
+
+.header img {
+  width: 50px;
+}
+
+.nav{
+  grid-area: na;
+  background-color:rgb(64, 124, 23);
+}
+
+.content {
+  grid-area: con;
+  background-color:rgb(189, 6, 6);
+}
